@@ -651,7 +651,7 @@ variable "CentralNode01_root_disk_size" {
 }
 
 module "provision_proxy_CentralNode01" {
-  source 						= "git::https://github.com/IBM-CAMHub-Open/terraform-modules.git?ref=1.0//vmware/proxy"
+  source 						= "git::https://github.com/IBM-CAMHub-Development/terraform-modules.git?ref=1.0//vmware/proxy"
   ip                  = "${var.CentralNode01_ipv4_address}"
   id									= "${vsphere_virtual_machine.CentralNode01.id}"
   ssh_user            = "${var.CentralNode01-os_admin_user}"
@@ -1082,7 +1082,7 @@ variable "LibertyNode01_root_disk_size" {
 }
 
 module "provision_proxy_LibertyNode01" {
-  source 						= "git::https://github.com/IBM-CAMHub-Open/terraform-modules.git?ref=1.0//vmware/proxy"
+  source 						= "git::https://github.com/IBM-CAMHub-Development/terraform-modules.git?ref=1.0//vmware/proxy"
   ip                  = "${var.LibertyNode01_ipv4_address}"
   id									= "${vsphere_virtual_machine.LibertyNode01.id}"
   ssh_user            = "${var.LibertyNode01-os_admin_user}"
